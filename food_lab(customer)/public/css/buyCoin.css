@@ -1,0 +1,231 @@
+/* Customer Buy Coin CSS */
+
+section {
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coincharge {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.coinchargeformdiv {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coinchargeform {
+    margin-top: 5%;
+}
+
+.coininput,
+.choosephoto {
+    font-size: 1.2rem;
+    margin-top: 5%;
+    padding-left: 5%;
+}
+
+.coinCal {
+    color: var(--coin-color);
+}
+
+.fileUpload {
+    color: var(--fileicon-color);
+}
+
+.coinrule {
+    background-color: var(--coinRulebg);
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 0.2rem solid var(--fileicon-color);
+}
+
+.coinRule,
+.coinCalculator {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3%;
+    font-weight: 900;
+}
+
+.coinList {
+    color: var(--text-color);
+    margin-top: 5%;
+    font-size: 1rem;
+    margin-left: 0.1%;
+}
+
+.coinRulehr {
+    color: var(--fileicon-color);
+    width: 70%;
+    margin: auto;
+}
+
+.submitbtn {
+    margin-top: 10%;
+    width: 20%;
+    font-size: 1.2rem;
+    margin-left: 10%;
+    font-weight: 900;
+    background-color: var(--coinRulebg) !important;
+    color: var(--submitbtn-textcolor) !important;
+    transition: 1s;
+}
+
+.cancelbtn {
+    margin-top: 10%;
+    width: 20%;
+    margin-left: 15%;
+    color: var(--cancelbtn-textcolor) !important;
+    background-color: var(--cancelbtn-color) !important;
+    font-size: 1.2rem;
+    font-weight: 900;
+    transition: 1s;
+}
+
+.submitbtn:hover {
+    transform: scale(1.1);
+}
+
+.cancelbtn:hover {
+    transform: scale(1.1);
+    color: black !important;
+}
+
+.coinCaldiv {
+    display: flex;
+    column-gap: 10%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.equalIcon {
+    color: #ffffff;
+    font-size: 2.1rem;
+    font-weight: 1000;
+}
+
+.ccalcul {
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+    height: 50%;
+    padding-left: 7%;
+}
+
+#coinChargeinput {
+    padding-left: 7%;
+}
+
+
+/*End Footer Section*/
+
+.copys {
+    background: url("/img/bg2.png");
+    min-height: 10vh;
+    background-size: cover;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+}
+
+
+/*End Footer Section*/
+
+.copys p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close{
+    width: 5%;
+    height: 5%;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    background: transparent;
+    border: none;
+ }
+
+ .chargeBtn{
+    background-color: var(--primary-color);
+    color: wheat;
+ }
+
+ .icon-box{
+     text-align: center;
+ }
+
+ .icons{
+     font-size: 3rem;
+     
+ }
+
+ .cancelbutton{
+    width: 30vw;
+ }
+ .modal-body{
+     text-align: center;
+ }
+
+@media(max-width:720px) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .coinrule {
+        width: 90%;
+        display: flex;
+    }
+    .coincharge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .coinchargeformdiv {
+        width: 80%;
+        margin-top: 10%;
+        display: flex;
+    }
+    .coinchargeform {
+        width: 100%;
+    }
+    .ccalcul {
+        width: 33%;
+        padding-left: 2%;
+        font-size: 1rem;
+    }
+    .submitbtn,
+    .cancelbtn {
+        width: 32%;
+        margin-left: 13%;
+    }
+    .fileuploadInput,
+    #coinChargeinput {
+        width: 40vw;
+    }
+    .copys p {
+        font-size: 1rem;
+    }
+    .footer-names {
+        font-size: 1.5rem;
+        left: 23vw;
+    }
+}

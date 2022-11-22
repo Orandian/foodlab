@@ -1,0 +1,35 @@
+.bord {
+    height: auto;
+}
+.lidisplay {
+    list-style-type: none;
+}
+.title {
+    font-size: var(--title);
+}
+.detail {
+    font-size: var(--detail);
+}
+.tableheaders {
+    font-size: var(--tableheader);
+}
+.tablerows {
+    font-size: var(--tablerow);
+}
+.btncust1 {
+    margin: 10px;
+    width: 12vw;
+    font-size: var(--btntextsize) !important;
+    border: 1px black solid;
+    background-color: var(--btns) !important;
+}
+@media (max-width: 1446px) {
+    .tabe {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .tablelist {
+        width: 100%;
+    }
+}

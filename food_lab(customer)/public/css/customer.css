@@ -1,0 +1,967 @@
+/* Start Header  */
+
+
+/*start carousel*/
+
+.carousels {
+    min-height: 100%;
+}
+
+.items {
+    min-height: 70vh;
+}
+
+.abouts {
+    background-color: red;
+}
+
+.menuphotos {
+    background-color: blue;
+}
+
+.tastes {
+    color: var(--text-color);
+}
+
+.delivery-infos {
+    color: var(--primary-color);
+}
+
+.delivery-btns {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 2px groove transparent;
+    font-weight: bold;
+}
+
+.delivery-btns:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    border: 2px groove var(--primary-color);
+}
+
+.carousel-photos {
+    width: 100%;
+}
+
+@media (max-width: 720px) {
+    .companys {
+        display: none;
+    }
+    .menus {
+        max-width: 100px;
+    }
+    .delivery-btns {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*end navbar*/
+
+
+/*end carousel*/
+
+
+/* End Header  */
+
+
+/*Start Welcome Section*/
+
+.welcomes {
+    min-height: 60vh;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/bg1.png");
+    background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcometexts,
+.companyinfos {
+    color: var(--text-color);
+}
+
+.welcometexts {
+    margin-bottom: 0;
+}
+
+.companyinfos {
+    max-width: 80%;
+    margin-top: 7%;
+    position: relative;
+}
+
+.falefts,
+.farights {
+    font-size: 2.5rem;
+    position: absolute;
+}
+
+.falefts {
+    left: 0;
+    bottom: 90%;
+}
+
+.farights {
+    right: 0;
+    top: 90%;
+}
+
+@media (max-width: 720px) {
+    .welcomes {
+        min-height: 60vh;
+    }
+    .falefts,
+    .farights {
+        font-size: 1.5rem;
+    }
+}
+
+
+/*End Welcome Section*/
+
+
+/*Start Best Seller Item Section*/
+
+.best-items,
+.recommand-items {
+    /* min-height: 100vh; */
+    /* background-image: url("/img/bg2.png");
+    background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.close {
+    width: 5%;
+    height: 5%;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    background: transparent;
+    border: none;
+}
+
+.sellers {
+    min-width: 95%;
+    /* background: linear-gradient( 120deg, rgba(0, 0, 0, 1) 30%, rgba(245, 0, 0, 0.5) 60%);
+    border-radius: 20px; */
+}
+
+.seller-headers,.delivery-headers img{
+    width: 30%;
+    margin: 30px 0;
+}
+
+.seller-headers img{
+    width: 100%;
+}
+
+.product-imgs {
+    width: 18rem;
+}
+
+.recommands {
+    min-width: 95%;
+    /* background: linear-gradient( 120deg, rgba(245, 0, 0, 0.5) 30%, rgba(0, 0, 0, 1) 60%); */
+    /* border-radius: 20px; */
+}
+
+.coins {
+    color: var(--coin-color);
+    font-size: 1.4rem;
+}
+
+.shopbtns {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 2px groove transparent;
+}
+
+.shopbtns:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    border: 2px groove var(--primary-color);
+}
+
+
+/*End Best Seller Item Section*/
+
+
+/*Start Delivery Section*/
+
+.deliverys {
+    /* min-height: 50vh; */
+    /* background: linear-gradient( 360deg, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.7) 90%), url("/img/bg3.png"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+/*start delivery Informaiton*/
+
+.del-headers {
+    font-size: 1.9rem;
+}
+
+.del-headers:first-of-type {
+    color: var(--primary-color);
+}
+
+.townships,
+.prices {
+    font-size: 1.2rem;
+}
+
+
+/*end delivery Informaiton*/
+
+@media (max-width: 720px) {
+    .del-headers {
+        font-size: 1.4rem;
+    }
+    .townships,
+    .prices {
+        font-size: 0.9rem;
+    }
+    .seller-headers,.delivery-headers img{
+        width: 40%;
+    }
+}
+
+
+/*End Delivery Section*/
+
+
+/*Start Contact Section */
+
+.contacts {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.company-infos p.fw-bolder {
+    font-size: 2.5rem;
+}
+
+.company-infos{
+    width: 50%;
+}
+
+.company-details {
+    font-size: 1.2rem;
+}
+
+.company-details i {
+    font-size: 1.5rem;
+}
+
+.company-details a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+@media (max-width: 720px) {
+    .contacts {
+        min-height: 70vh;
+    }
+    .company-infos p.fw-bolder {
+        font-size: 1.8rem;
+    }
+    .company-details {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*End Contact Section */
+
+
+/*
+    * Create:zayar(2022/01/17)
+    * Update:
+    */
+
+
+/*start Profile Alert box*/
+
+
+/* #profileAlert {
+    position: absolute;
+    z-index: 999;
+    width: 67vh;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.952);
+    top: 100%;
+    right: 0;
+    visibility: hidden;
+}
+
+.profileAlertHeader {
+    color: var(--primary-color);
+}
+.userProfile {
+    margin-left: 17vh;
+    margin-right: 17vh;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.userProfileDiv {
+    width: 10vh;
+}
+#informButton {
+    cursor: pointer;
+}
+.profileAlertBody {
+    width: 100%;
+    height: 50vh;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+.editProfile {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+}
+
+.updatePassword {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+#back {
+    cursor: pointer;
+}
+#back:hover {
+    color: var(--primary-color) !important;
+}
+@media only screen and (max-width: 720px) {
+    .userProfile {
+        font-size: 1.2rem !important;
+        width: 50vw !important;
+    }
+
+    #profileAlert {
+        width: 47vh;
+    }
+    #profileAlert {
+        left: 2vw !important;
+    }
+    .profileAlertBody {
+        font-size: 1rem !important;
+    }
+    .userProfile {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .profileAlertHeader {
+        margin-right: 10vw;
+    }
+}
+/*end profile alert */
+
+
+/*
+    * Create:zayar(2022/01/22)
+    * Update:
+    */
+
+
+/*start inform Alert box*/
+
+
+/*.informAlert {
+    position: absolute;
+    z-index: 999;
+    width: 55vh;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    top: 20%;
+    margin-left: 30vw;
+    border-radius: 1.4vh;
+}
+
+#backInform {
+    width: 5vw;
+    height: 5vh;
+    margin-left: 1vw;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.headerInform {
+    margin: auto;
+}
+
+.infromTitle {
+    cursor: pointer;
+}
+.alertButton {
+    background-color: rgb(167, 175, 166);
+    text-align: center;
+    width: 7vw;
+    margin-left: auto;
+    color: white;
+}
+.forNews,
+.forMessages,
+.forTracks {
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    gap: 2.5vh;
+}
+#forNews {
+    display: none !important;
+}
+#forMessages {
+    display: none !important;
+}
+#forTracks {
+    display: none !important;
+}
+.news,
+.messages,
+.tracks {
+    width: 100%;
+    height: 15vh;
+    border-radius: 1vh;
+    background-color: rgb(189, 173, 158);
+}
+.news img {
+    max-width: 22%;
+    margin-right: auto;
+    margin-left: 1vw;
+}
+
+.tracks img {
+    max-width: 22%;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.newsColumnDiv {
+    margin-right: 10vw;
+}
+.green {
+    background-color: rgb(16, 136, 0);
+    text-align: center;
+    width: 7vw;
+    color: white;
+}*/
+
+
+/*Start Policy Section*/
+
+.policys {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/bg6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.policy-infos {
+    width: 80%;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+.policyheaders {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.policy-infos div>* {
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+
+@media (max-width: 720px) {
+    .policy-infos {
+        font-size: 0.9rem;
+    }
+    .policyheaders {
+        font-size: 1.6rem;
+    }
+}
+
+
+/*End Policy Section*/
+
+
+/*Start Report and Suggest Form Section */
+
+.forms {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/bg6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reports,
+.suggests {
+    min-height: 70vh;
+}
+
+.form-headers {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin: 0 0 4% 0;
+}
+
+form {
+    min-width: 80%;
+}
+
+form div label {
+    min-width: 20%;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.errors {
+    position: relative;
+}
+
+.error-spans {
+    position: absolute;
+    left: 20%;
+    top: 100%;
+}
+
+form div input,
+button,
+.selects {
+    font-size: 1.1rem !important;
+}
+
+.selects {
+    color: var(--text-color) !important;
+}
+
+.township-options {
+    color: var(--bg2-color) !important;
+}
+
+form div .btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    border: 2px groove transparent;
+    padding: 10px 20px;
+}
+
+form div .btn:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    border: 2px groove var(--primary-color);
+}
+
+form div .cancels {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    border: 2px groove transparent;
+    padding: 10px 20px;
+}
+
+@media (max-width: 720px) {
+    form div label {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*End Report and Suggest Form Section*/
+
+
+/*Start Access Section*/
+
+.accesses {
+    min-height: 100vh;
+    background: url("/img/bg7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.arrows {
+    font-size: 2rem;
+}
+
+
+/*start register header*/
+
+.register-headers div:first-of-type {
+    /* min-width: 60%; */
+}
+
+.welcome-registers {
+    margin-left: auto;
+    min-width: 40%;
+}
+
+.creates {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.sign-withs i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.sign-withs>* {
+  
+    font-size: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal-headers {
+    width: auto;
+    display: inline !important;
+    float: none !important;
+    margin-left: 20px;
+    padding: 0 10px;
+}
+
+@media (max-width: 720px) {
+    .register-headers div:first-of-type {
+        /* min-width: 100%; */
+    }
+    .welcome-registers {
+        display: none;
+    }
+}
+
+
+/*end register header*/
+
+
+/*start register form*/
+
+.register-forms {
+    min-width: 100%;
+}
+
+.register-forms form {
+    min-width: 60%;
+}
+
+.register-forms .inputs {
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+.form-inputs {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.register-forms input,
+.register-forms select {
+    background-color: var(--bg-color);
+    border: none;
+    color: var(--text-color);
+    border-radius: 15px;
+    padding: 15px 10px;
+}
+
+.register-forms select {
+    color: black;
+}
+
+.register-forms input::placeholder {
+    color: var(--text-color);
+}
+
+.passwords {
+    position: relative;
+}
+
+.passwords i {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.fa-eye {
+    display: none;
+}
+
+.register-forms .createAccs {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+
+/* start modal  */
+
+.modals {
+    background-color: transparent;
+}
+
+.contents {
+    background-color: #2d2d2d;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.submits {
+    color: var(--primary-color);
+    text-shadow: 0px 0px 10px var(--text-color);
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.modal-inputs,
+.modal-selects,
+.modal-body textarea {
+    width: 100%;
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    border: none !important;
+    border-radius: 0px !important;
+    padding: 0 !important;
+    outline: none;
+}
+
+.modal-selects option {
+    color: black !important;
+}
+
+.bootstrap-tagsinput {
+    background-color: transparent !important;
+    border: none !important;
+    outline: 0;
+}
+
+.bootstrap-tagsinput .tag {
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+}
+
+
+/* end modal  */
+
+
+/*end register form*/
+
+.have-accs {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-left: 5rem !important;
+}
+
+.have-accs a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+/*Start Login Section*/
+
+.login {
+    min-height: 90vh;
+    /* background: url("/img/bg8.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login .register-headers div:first-of-type {
+    min-width: 40%;
+}
+
+
+/*End Login Section*/
+.access-imgs{
+    width: 50vw;
+    text-align: center;
+}
+
+.access-imgs > img{
+    width: 80%;
+}
+
+@media (max-width: 720px) {
+    .access-imgs {
+        display: none;
+    }
+    .register-forms form {
+        min-width: 100%;
+    }
+    .have-accs {
+        font-size: 1rem;
+    }
+}
+
+
+/*End Access Section*/
+
+
+/*Start Footer Section*/
+
+.footer-infos {
+    color: var(--text-color);
+     background-color: var(--bg-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.footer-names {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.footer-details a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footer-details .mailTeams {
+    text-decoration: underline;
+}
+
+.footer-details a:hover {
+    color: var(--primary-color);
+}
+
+.footer-details .footer-navs>*,
+.footer-details div:nth-of-type(2) p:first-of-type,
+.footer-details div:nth-of-type(3) p:first-of-type,
+.footer-details div:last-of-type p:first-of-type {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.copys {
+    min-height: 10vh;
+    background-size: cover;
+    color: var(--primary-color);
+     /* background-color: var(--bg-color); */
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+}
+
+
+/*End Footer Section*/
+
+.copys p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 720px) {
+    .copys p {
+        font-size: 1rem;
+    }
+    .footer-names {
+        font-size: 1.5rem;
+        left: 23vw;
+    }
+}
+
+
+/*End Footer Section*/
+
+
+/*Start Cart Section*/
+
+.cart-label {
+    margin-bottom: 0 !important;
+}
+
+
+/*start modal*/
+
+.confirms {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 2px groove transparent;
+    border-radius: 0.3em;
+}
+
+.no_delete {
+    border: 1px solid var(--primary-color);
+}
+
+
+/*end modal*/
+
+
+/*End Cart Section*/
+
+
+/*Menu List Add By LK*/
+.menulist{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.foods{
+    width: 250px;
+    height: 250px;
+}
+
+.foods>.img-container{
+width: 250px;
+height: 150px;
+text-align: center;
+}
+
+.img-container>img{
+    height: 100%;
+  transition: transform 1s;
+}
+
+.img-container>img:hover{
+    transform: scale(1.5);
+}
+
+.slidertx{
+    background-color: rgba(45, 45, 45, 0.4);
+    border-radius: 12px;
+}
+
+.carousel-indicators > button{
+    background-color: var(--primary-color) !important;
+    height: 5px  !important;
+}
+
+.contact_img{
+    width: 30%;
+}
+
+.contact_img img{
+    width: 100%;
+}

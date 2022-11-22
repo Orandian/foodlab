@@ -1,0 +1,423 @@
+products:root {
+    --primary-color: #FF470B;
+    --secondary-color: #ff6600;
+    --text-color: #FFFFFF;
+    --bg2-color: black;
+    --coin-color: #FFD233;
+}
+
+* {
+    overflow-x: hidden !important;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    background: radial-gradient(99.42% 194.92% at 0% 1.32%, #000000 26.49%, #000000 49.21%, #000000 82.28%);
+    position: relative;
+}
+
+.cartTitle {
+    color: var(--primary-color);
+}
+
+.itemTitle {
+    color: var(--primary-color);
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#productTitle {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0 !important;
+}
+
+#qtyTitle {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0 !important;
+}
+
+.form-box {
+    width: 20%;
+}
+
+
+/* switch toggle */
+
+.button-box {
+    width: 75%;
+    /*height: 3rem; */
+    font-size: 1.5rem;
+    position: relative;
+    background: var(--text-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0 5px 0;
+    overflow: hidden;
+}
+
+.copys {
+    margin-top: 4rem;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    width: 50%;
+    outline: none;
+    position: relative;
+    text-align: center;
+    color: black
+}
+
+#btnSwitch {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: var(--primary-color);
+    color: var(--text-color);
+    transition: all linear 0.4s;
+}
+
+
+/* Added Buy Products */
+
+.products {
+    position: relative;
+}
+
+.products .product-img{
+    height: 200px !important;
+    overflow: hidden;
+}
+
+.products .product-img img{
+    width: 100%;
+}
+
+.no-datas{
+    height: 20vh;
+}
+
+.no-datas p{
+    line-height: 20vh;
+}
+
+.no-datas a{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.products::after {
+    content: ' ';
+    display: block;
+    width: 92%;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fa-coins {
+    color: gold;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.calculateitem {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    margin-top: 0.8rem;
+    margin-left: 3rem;
+    width: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: justify;
+}
+
+.item {
+    width: 100vw;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.1rem solid var(--text-color);
+}
+
+.iconSize {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    background-color: black;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.imgBox {
+    width: 12%;
+    margin-left: 5%;
+}
+
+.imgSize {
+    height: 7rem;
+    width: 7rem;
+}
+
+.itemdetail {
+    width: 18%;
+    padding-left: 0.2rem;
+}
+
+#pname,
+#code {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 0 !important;
+}
+
+.quantityDiv {
+    margin-left: 0.3rem;
+    margin-top: 1.5rem;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.wrapper {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--text-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+}
+
+.wrapper span.num {
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.amountDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 20%;
+    margin-left: 3%;
+    position: relative;
+}
+
+.coinBox {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    display: block;
+}
+
+.cashBox {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    display: none;
+}
+
+
+/* Calculate Total Price  */
+
+.bouchers {
+    min-height: 60vh;
+}
+
+.secDiv {
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
+    width: 100vw;
+}
+
+.imgDiv {
+    margin-left: 10rem;
+    height: 40vh;
+    width: 20vw;
+}
+
+.totalDiv {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 50vw;
+    position: absolute;
+    margin-left: 50%;
+}
+
+.amountDiv1 {
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    position: relative;
+    margin-left: 20%;
+}
+
+#amounttitle,
+.deliverytitle,
+.grandtitle {
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.coinDiv {
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.totals {
+    position: relative;
+}
+
+.totals::after {
+    content: ' ';
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cashDiv {
+    width: 10rem;
+    height: 4rem;
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    font-weight: 400;
+    display: none;
+    position: relative;
+}
+
+
+/* Delivery Click Btn  */
+
+.btnStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.cancels {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 20px;
+    border-radius: 0.3em;
+}
+
+.order {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: large;
+    border-radius: 0.3em;
+    padding: 10px 20px;
+    margin-bottom: 0 !important;
+}
+
+
+/* Media quary for Cart */
+
+@media(max-width: 750px) {
+    /* Start Cart Section */
+
+    .products .product-img{
+        height: 100px !important;
+    }
+
+    #qtyTitle,
+    #productTitle {
+        font-size: 0.9rem;
+    }
+    /* switch btn  */
+    .form-box {
+        width: 40%;
+        font-size: 0.9rem;
+    }
+    .button-box {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 2px 0 2px 0;
+    }
+
+    #pname,
+    #code {
+        font-size: 0.7rem;
+    }
+
+    .wrapper {
+        min-width: 100%;
+        border-radius: 5px;
+    }
+    .wrapper span,
+    .wrapper span.num {
+        font-size: 0.9rem;
+    }
+
+    .coinBox,
+    .cashBox {
+        font-size: 0.9rem;
+    }
+
+    /* Calculate Total Price */
+    .imgDiv {
+        display: none;
+    }
+    .cart-icons {
+        display: none !important;
+    }
+
+    .cancels,
+    .order {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    #amounttitle,
+    .deliverytitle,
+    .grandtitle,
+    .coinDiv {
+        font-size: 0.9rem;
+    }
+}

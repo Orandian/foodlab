@@ -1,0 +1,559 @@
+/*start navbar*/
+
+.headers {
+    min-height: 100vh;
+    background-image: url("/img/bg10.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-buttons {
+    background-color: var(--primary-color);
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 20px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.4s;
+}
+
+.changes .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.changes .line2 {
+    opacity: 0;
+}
+
+.changes .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navs {
+    background-color: var(--bg-color);
+    font-size: 1.1rem;
+}
+
+.texts {
+    color: var(--primary-color);
+}
+
+.texts:hover {
+    color: var(--text-color);
+}
+
+.actives {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.comapanynames {
+    color: var(--text-color);
+}
+
+.leftside {
+    left: 130% !important;
+    font-size: 1rem;
+    padding: 2px;
+    border-radius: 50%;
+    color: var(--product-color);
+}
+
+.navs i {
+    cursor: pointer;
+}
+
+/*end navbar*/
+
+/* Detail Section */
+
+.products {
+    font-size: 3rem;
+    color: var(--product-color);
+}
+
+.custombtn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+input[list] {
+    margin-left: auto;
+    margin-right: auto;
+    /* background: #D2E9FF; */
+    padding: 15px 15px 15px 15px;
+    font: 14px Arial, Helvetica, sans-serif;
+}
+
+datalist {
+    color: yellow !important;
+}
+#form1 {
+    border-radius: 0rem 0.25rem 0.25rem 0rem !important;
+    width: 100% !important;
+}
+
+.custombtn {
+    width: 65px;
+}
+.custombtn:focus,
+#form1:focus,
+#form1:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+#selectpicker1 {
+    font-size: 1rem;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color:var(--primary-color);
+}
+
+#selectpicker2 {
+    font-size: 1rem;
+    border-radius: 12px;
+    font-weight: bold;
+        color: #fff;
+    background-color:var(--primary-color);
+}
+
+.special {
+    color: var(--text-color) !important;
+    background: var(--bg2-color) !important;
+    font-size: 0.8rem;
+    border: 1px solid var(--product-color) !important;
+}
+
+.special:focus,
+.special:hover {
+    background-color: burlywood !important;
+    /* background-color:  !important; */
+    border: 1px solid var(--product-color) !important;
+}
+
+.productbox {
+    /* background: linear-gradient( 120deg, rgba(245, 0, 0, 0.5) 30%, rgba(0, 0, 0, 1) 60%); */
+
+}
+
+.coins {
+    color: var(--coin-color);
+    font-size: 1.4rem;
+}
+
+.money {
+    font-size: 1.4rem;
+}
+
+.tastebtns {
+    background-color: var(--text-color);
+    color: var(--product-color);
+    border: 2px groove transparent;
+    width: 40%;
+    height: 40%;
+}
+
+.typebtns {
+    background-color: var(--text-color);
+    color: var(--product-color);
+    border: 2px groove transparent;
+    width: 40%;
+    height: 40%;
+}
+
+.shopbtns {
+    background-color: var(--text-color);
+    color: var(--product-color);
+    border: 2px groove transparent;
+    margin: 10px;
+    padding: 5px 17px 5px 17px;
+}
+
+.detailbtns {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    background-origin: 2px groove transparent;
+    margin: 10px;
+}
+
+.shopbtns:hover,
+.allbtns:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    border: 2px groove var(--primary-color);
+}
+
+.recommends {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: auto;
+    margin: 10px;
+    padding: 7px;
+    color: var(--text-color);
+    background: var(--bg2-color);
+    border: 1px solid var(--product-color);
+}
+
+.image-container {
+    width: 50%;
+    height: 50%;
+}
+
+.images {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.copy {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.btnCart {
+    border-style: solid;
+    background: var(--btn-color);
+    color: var(--text-color);
+    border-color: transparent;
+}
+
+.btnShopping {
+    border-style: solid;
+    background-color: transparent;
+    border-color: var(--btn-color);
+}
+
+.close {
+    width: 5%;
+    height: 5%;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    background: transparent;
+    border: none;
+}
+
+.loader {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    display: none;
+}
+
+.duo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    background: hsla(0, 0%, 0%, 0);
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+    border-radius: 10px;
+    background: whitesmoke;
+    animation-name: lighting;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+
+.dot-a {
+    animation-delay: 0s;
+}
+
+.dot-b {
+    width: 10px;
+    height: 10px;
+    animation-delay: 0.5s;
+}
+
+.dot-c {
+    width: 12px;
+    height: 12px;
+    animation-delay: 1s;
+}
+
+.dot-d {
+    width: 14px;
+    height: 14px;
+    animation-delay: 1.5s;
+}
+
+@keyframes lighting {
+    0% {
+        opacity: 1;
+        transform: scale(0.5);
+    }
+    49% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
+
+body {
+    background: #ccc;
+}
+
+.loading {
+    display: none;
+}
+.spinner {
+    display: inline-block;
+
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+    font: 0/0 a;
+    color: trasparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+    content: "";
+    display: block;
+    font-size: 10px;
+    width: 0.5em;
+    height: 0.5em;
+    margin-top: 0;
+    border-radius: 1em;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0,
+        rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
+        rgba(255, 255, 255, 0.75) 0 1.5em 0 0,
+        rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
+        rgba(255, 255, 255, 0.5) -1.5em 0 0 0,
+        rgba(255, 255, 255, 0.5) -1.1em -1.1em 0 0,
+        rgba(255, 255, 255, 0.75) 0 -1.5em 0 0,
+        rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+    box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0,
+        rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
+        rgba(255, 255, 255, 0.75) 0 1.5em 0 0,
+        rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
+        rgba(255, 255, 255, 0.5) -1.5em 0 0 0,
+        rgba(255, 255, 255, 0.5) -1.1em -1.1em 0 0,
+        rgba(255, 255, 255, 0.75) 0 -1.5em 0 0,
+        rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+    position: absolute;
+    /* top: 42%;
+            
+            left: 100%; */
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .recommends {
+        width: 80%;
+        height: 90%;
+        padding: 5px;
+        margin-right: auto;
+    }
+
+    .image-container {
+        width: 50%;
+        height: 50%;
+    }
+
+    .images {
+        width: 100% !important;
+    }
+    .tastebtns {
+        background-color: var(--text-color);
+        color: var(--product-color);
+        border: 2px groove transparent;
+        margin: 20px !important;
+        min-width: 25% !important;
+        min-height: 25% !important;
+    }
+    .typebtns {
+        background-color: var(--text-color);
+        color: var(--product-color);
+        border: 2px groove transparent;
+        margin: 20px !important;
+        min-width: 25% !important;
+        min-height: 25% !important;
+    }
+    .recommends {
+        margin: 1rem;
+        margin: auto;
+        padding: 5px !important;
+        color: var(--text-color);
+        background: var(--bg2-color);
+        border: 1px solid var(--product-color);
+    }
+
+
+    
+
+    .loading {
+        margin-top: 0.5rem !important;
+        margin-bottom: 3rem;
+        margin-left: 11rem;
+        text-align: center;
+        align-items: center;
+    }
+    #form1 {
+        /* position: relative; */
+        width: 100% !important;
+    }
+}
+
+/**Food New Product Edit By Linn Ko **/
+.food-container {
+    width: 100vw;
+}
+
+ .food {
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer !important;
+    border: 1px solid darkgrey !important;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.food:hover{
+    transform: scale(1.1);
+}
+
+.pic {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+.pic > img {
+    height: 100%;
+}
+
+.pic + .detail{
+    width: 300px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+.detail > .title{
+    text-decoration: none;
+    position: relative;
+    color : white;
+}
+
+.detail > .title:hover{
+    color: white;
+}
+
+.detail > .title::before{
+    content : "";
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0b1a;
+    transform: scale(0);
+    transition: transform 1s ;
+}
+
+.food:hover .title::before{
+    transform: scale(1);
+}
+
+.detail > .slide{
+    position: absolute;
+    bottom: -35px;
+    right: -75px;
+    width: 200px;
+    height: 100px;
+    transform: rotate(-45deg);
+    background-color: var(--primary-color);
+}
+
+
+.food > .slide{
+    position: absolute;
+    top: -79px;
+    left: -75px;
+    width: 200px;
+    height: 100px;
+    transform: rotate(-45deg);
+    background-color: red;
+}
+
+.slide + p{
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    transform: rotate(-45deg);
+}
+
+.order_food{
+    text-decoration: none;
+    color: #fff;
+}
+
+a > .moredetail{
+    background-color: #ff470b;
+    text-decoration: underline;
+}
+
+.detail > .price{
+    position: absolute;
+    text-align: end;
+    right: 0;
+    bottom: 0;
+    width: 80px;
+
+}
+
+ .shopcart{
+    
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+ }
+
+

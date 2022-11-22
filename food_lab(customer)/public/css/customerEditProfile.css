@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("/img/UpdateProfile4.png");
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    resize: both;
+    background-color: #2d2d2d;
+}
+.headerEditProfile {
+    position: absolute;
+}
+.backProfileAlert {
+    position: absolute;
+}
+.headerUpdateProfile {
+    position: relative;
+}
+.titleEditProfile {
+    /* position: absolute;
+    margin: auto !important;
+    margin-top: 1rem;
+    font-size: 2.8rem; */
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.iconColor {
+    color: var(--primary-color);
+}
+.remaincoin {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-right: 15vw;
+}
+.hide {
+    display: none;
+}
+.arrows {
+    font-size: 2rem;
+}
+.titleUpdateProfile {
+    position: absolute;
+    margin-left: 40vw;
+    margin-top: 3rem;
+    font-size: 2.8rem;
+    color: var(--primary-color);
+}
+
+.bodyEditProfile {
+    position: absolute;
+    width: 80%;
+    height: 55vh;
+    margin-top: 2rem;
+    margin-left: 10%;
+    flex-wrap: wrap;
+}
+.bodyUpdateProfile {
+    position: relative;
+    width: 80%;
+    height: 55vh;
+    margin-top: 9rem;
+    margin-left: 30%;
+    flex-wrap: wrap;
+}
+.updateButton {
+    width: 25vw;
+    height: 6vh;
+    border-radius: 1.2vh;
+    margin-left: 20%;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+}
+.changePassword {
+    width: 25vw;
+    height: 6vh;
+    border-radius: 1.2vh;
+
+    margin-left: 2vw;
+    background-color: white;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+.changePasswordIn {
+    height: 100%;
+    padding: auto;
+}
+.bodyEditProfile div label {
+    color: white;
+}
+.selectBoxWidth {
+    width: 98% !important;
+}
+.titleEditProfile p {
+    color: var(--primary-color);
+}
+.infos {
+    height: 7vh;
+}
+.InputParent {
+    width: 25vw;
+    height: 6vh;
+    background-color: rgba(107, 106, 97, 0.808);
+    border-radius: 1.2vh;
+}
+.InputParent1 {
+    width: 40vw;
+    height: 6vh;
+    background-color: rgba(107, 106, 97, 0.808);
+    border-radius: 1.2vh;
+}
+.InputChild {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 83, 255, 0);
+    border-style: none;
+    color: white;
+    font-size: 1rem !important;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+.btnDiv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 4%;
+}
+.editButton {
+    margin-left: 23vw;
+    margin-top: 1.5vh;
+}
+.bootstrap-tagsinput {
+    background-color: transparent !important;
+    border: none !important;
+    outline: 0;
+}
+.bootstrap-tagsinput .tag {
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+}
+#favType {
+    height: fit-content !important;
+}
+#favType2 {
+    height: fit-content !important;
+    min-height: 7vh !important;
+    width: 56vw;
+}
+.passwordSuccess {
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    font-weight: bolder;
+    color: var(--primary-color);
+    font-size: 1.8rem !important;
+    visibility: hidden;
+    animation: animatename 1s ease-out 1;
+}
+@keyframes animatename {
+    0% {
+        transform: translateY(0px);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(-15vh);
+    }
+}
+/* edit profile*/
+@media (max-width: 650px) {
+    .titleEditProfile {
+        position: absolute;
+        margin-left: 36vw;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+    #favType2 {
+        width: 100%;
+    }
+    .remaincoin {
+        margin-right: 10vw;
+        margin-top: 8rem;
+    }
+    .titleUpdateProfile {
+        position: absolute;
+        margin-left: 30vw;
+        margin-top: 5rem;
+        font-size: 1.7rem;
+    }
+    .bodyEditProfile {
+        flex-direction: column !important;
+
+        flex-wrap: nowrap;
+        margin-left: 10%;
+        width: 80%;
+        height: 70%;
+    }
+    .bodyUpdateProfile {
+        flex-direction: column !important;
+        margin-top: 11rem;
+        flex-wrap: nowrap;
+        margin-left: 10%;
+        width: 80%;
+        height: 70%;
+    }
+    .InputParent {
+        width: 90%;
+        height: 80%;
+        column-gap: 4%;
+        font-size: 0.8rem !important;
+    }
+    .InputParent1 {
+        width: 90%;
+        height: 80%;
+        column-gap: 4%;
+        font-size: 0.8rem !important;
+    }
+    .updateButton {
+        width: 100%;
+        height: 6vh;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 1em;
+        font-weight: 500;
+        margin-left: 2%;
+    }
+    .changePassword {
+        width: 100%;
+        height: 6vh;
+        background-color: white;
+        color: var(--primary-color);
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .editButton {
+        margin-left: 20vw;
+        margin-top: 1.5vh;
+    }
+    .InputParent,
+    .InputParent1,
+    .InputChild {
+        font-size: 0.5rem !important;
+    }
+}
+@media (max-width: 300px) {
+    .changePassword,
+    .updateButton {
+        height: 7vh;
+        font-size: 0.5rem;
+    }
+    .titleEditProfile {
+        margin-left: 20vw;
+        margin-top: 7rem;
+        font-size: 1rem;
+    }
+}
+/* changePassword */
+.alertBox {
+    width: 54%;
+    height: fit-content;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2vh;
+    visibility: hidden;
+}
+.visible {
+    visibility: visible;
+}
+.hide {
+    display: none;
+}
+.alertUpdate {
+    margin-top: 1vh;
+    margin-left: 10%;
+    position: absolute;
+    height: fit-content;
+    width: 80%;
+    border-radius: 2vh;
+    background-color: black;
+}
+.InputTitle {
+    position: absolute;
+    background-color: black;
+    color: var(--primary-color);
+    top: -2vh;
+    width: 40%;
+    margin-left: 4vw;
+    font-size: 1rem;
+    text-align: center;
+}
+.infos1 {
+    margin-bottom: 6vh;
+}
+.infos2 {
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+}
+.InputParentAlert {
+    position: absolute;
+    width: 90%;
+    height: 9vh;
+    margin-top: 3vh;
+    background-color: rgba(126, 124, 118, 0);
+    border-radius: 1.2vh;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+}
+.InputChild1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 83, 255, 0) !important;
+    border-style: none;
+    padding-left: 3%;
+    padding-top: 2%;
+    color: white !important;
+    font-size: 1.2rem;
+}
+.errorPassword {
+    position: absolute;
+
+    margin-top: 0.7rem;
+}
+.updateButtonAlert {
+    /* position: absolute; */
+
+    height: 6vh;
+    border-radius: 1.2vh;
+    margin: auto;
+    background-color: var(--primary-color);
+    color: white;
+
+    font-size: larger;
+}
+.backbtn {
+    background-color: white;
+    color: var(--primary-color);
+}
+#new {
+    width: 40% !important;
+}
+#confirm {
+    width: 55% !important;
+}
+#old {
+    width: 40% !important;
+}
+
+@media (max-width: 1000px) {
+    .alertBox {
+        width: 80%;
+    }
+}
+@media (max-width: 720px) {
+    .alertBox {
+        width: 95%;
+    }
+    .alertUpdate {
+        width: 85%;
+        gap: 7vh !important;
+    }
+    .errorPassword {
+        right: 2vw !important;
+    }
+    #new {
+        font-size: 0.8rem;
+        width: 60% !important;
+    }
+    #confirm {
+        font-size: 0.8rem;
+        width: 65% !important;
+    }
+    #old {
+        font-size: 0.8rem;
+        width: 60% !important;
+    }
+    .updateButtonAlert {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 480px) {
+    #confirm {
+        width: 80% !important;
+    }
+}
